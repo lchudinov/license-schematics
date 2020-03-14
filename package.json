@@ -1,6 +1,6 @@
 {
   "name": "license",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "License schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
