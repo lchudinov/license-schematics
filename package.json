@@ -1,5 +1,5 @@
 {
-  "name": "license",
+  "name": "@lchudinov/license",
   "version": "1.0.0",
   "description": "License schematics",
   "scripts": {
@@ -9,6 +9,10 @@
   "keywords": [
     "schematics"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lchudinov/license-schematics.git"
+  },
   "author": "",
   "license": "MIT",
   "schematics": "./src/collection.json",
