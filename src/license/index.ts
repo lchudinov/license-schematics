@@ -24,6 +24,10 @@ const license2Text = [
 export function license(_options: any): Rule {
   return chain([
     (tree: Tree, _context: SchematicContext) => {
+      if (typeof _options.sourceDir !== 'string') {
+        console.error('--sourceDir argument is missing');
+        return;
+      }
       tree.getDir(_options.sourceDir)
         .visit(filePath => {
           if (!filePath.endsWith('.ts') && !filePath.endsWith('.css') && !filePath.endsWith('.html')) {
