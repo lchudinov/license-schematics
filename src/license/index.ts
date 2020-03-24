@@ -30,7 +30,7 @@ export function license(_options: any): Rule {
       }
       tree.getDir(_options.sourceDir)
         .visit(filePath => {
-          if (!filePath.endsWith('.ts') && !filePath.endsWith('.css') && !filePath.endsWith('.html')) {
+          if (!filePath.endsWith('.ts') && !filePath.endsWith('.css') && !filePath.endsWith('.scss') && !filePath.endsWith('.html')) {
             return;
           }
           const content = tree.read(filePath);
