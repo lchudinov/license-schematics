@@ -1,6 +1,6 @@
 {
   "name": "@lchudinov/license",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "License schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
