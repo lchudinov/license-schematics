@@ -1,4 +1,5 @@
 import { Rule, SchematicContext, Tree, chain } from '@angular-devkit/schematics';
+import { Schema } from './schema';
 
 const eol = '\r\n';
 
@@ -23,7 +24,7 @@ const license2Lines = [
 ];
 
 
-export function license(_options: any): Rule {
+export function license(_options: Schema): Rule {
   return chain([
     (tree: Tree, _context: SchematicContext) => {
       if (typeof _options.sourceDir !== 'string') {

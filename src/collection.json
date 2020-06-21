@@ -2,7 +2,11 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "license": {
-      "description": "A blank schematic.",
+      "description": "Zowe license schematic.",
+      "factory": "./license/index#license"
+    },
+    "zowe": {
+      "description": "Zowe license schematic.",
       "factory": "./license/index#license"
     }
   }
